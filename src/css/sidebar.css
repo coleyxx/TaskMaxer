@@ -1,0 +1,25 @@
+#master_sidebar_closed {
+  height: 100vh;
+  width: 15rem;
+  background-color: grey;
+  transition-duration: .25s;
+}
+#master_sidebar_open {
+  height: 100vh;
+  width: 15rem;
+  background-color: grey;
+  transform: translateX(-100%);
+  transition-duration: .25s;
+}
+#master_sidebar_fake {
+  position: absolute;
+  height: 100vh;
+  width: 15rem;
+}
+.arrow_toggle {
+  height: 6rem;
+  width: 3rem;
+  position: absolute;
+  top: 35%;
+  left: 15rem;
+}

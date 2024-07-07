@@ -1,0 +1,8 @@
+#master_header {
+  height: 4rem;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
