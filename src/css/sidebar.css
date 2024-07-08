@@ -2,19 +2,25 @@
   height: 100vh;
   width: 15rem;
   background-color: grey;
-  transition-duration: .25s;
+  transition-duration: 0.20s;
 }
 #master_sidebar_open {
   height: 100vh;
   width: 15rem;
   background-color: grey;
   transform: translateX(-100%);
-  transition-duration: .25s;
+  transition-duration: 0.20s;
 }
 #master_sidebar_fake {
+  margin: 1rem 0rem 1rem 0rem;
   position: absolute;
   height: 100vh;
   width: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
 }
 .arrow_toggle {
   height: 6rem;
