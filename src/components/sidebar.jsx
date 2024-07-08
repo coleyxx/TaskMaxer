@@ -4,7 +4,7 @@ import User from "../components/user";
 
 export default function sidebar()
 {
-          // they are returning an array first index is the value second is the function since js arrays are dynamic
+          
           const [sideBarId, setSideBarId] = useState("master_sidebar_open");
 
           // create state array holding all users

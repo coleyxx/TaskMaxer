@@ -1,14 +1,21 @@
 #master_sidebar_closed {
+  position: absolute;
+  left: -14rem;
+  display: inline-block;
   height: 100vh;
   width: 15rem;
   background-color: grey;
   transition-duration: 0.20s;
 }
 #master_sidebar_open {
+  position: absolute;
+  left: -30rem;
+  display: inline-block;
   height: 100vh;
   width: 15rem;
   background-color: grey;
-  transform: translateX(-100%);
+  /* translating occurs relative to original position in the document flow : that is the point of origin */
+  transform: translateX(200%);
   transition-duration: 0.20s;
 }
 #master_sidebar_fake {
@@ -27,5 +34,5 @@
   width: 3rem;
   position: absolute;
   top: 35%;
-  left: 15rem;
+  left: 95%;
 }

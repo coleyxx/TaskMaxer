@@ -1,17 +1,18 @@
 import "../css/hub.css";
 import Header from "./header";
-import Sidebar from "./sidebar";
-import User from "./user";
+import BinActive from "./bin-active-tasks";
 
 export default function hub()
 {
-
-
+// this app will be pirate themed for the logo task maxer
+// got the idea from the map key for each task level
           return (
                     <>
                               <div id="master_hub">
                                         <Header />
-                                        <Sidebar />
+                                        <div id="box_hub_content">
+                                        <BinActive />
+                                        </div>
                               </div>
                     </>
           )
