@@ -1,14 +1,14 @@
 #master_active_tasks {
   height: 100%;
   width: 100%;
-  background-color: orange;
+  background-color: rgb(126, 125, 124);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 #box_active_tasks {
-  background-color: rgb(255, 143, 7);
+  background-color: rgb(68, 62, 54);
   width: 90%;
   height: 95%;
   outline: 2px solid white;
