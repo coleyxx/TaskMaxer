@@ -40,6 +40,7 @@ export default function task({ userObj })
                                         <div id="box_task">
                                                   <h3>"task"</h3>
                                         </div>
+                                        {usersAssignedToTask.map((element) => <h3>{element}</h3>)}
                                         <input onChange={(e) => { storeUserInputAddUser(e.currentTarget.value) }} type="text" />
                                         <button onClick={() => finalizeUser()}>add user</button>
                               </div>

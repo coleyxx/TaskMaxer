@@ -11,4 +11,12 @@ export default function header()
                               </div>
                     </>
           )
+
+
+          // WE ARE GOING TO IMPLEMENT CONTEXT API TO GET DATA FROM A STORE IN OTHER COMPONENTS
+          // redux unnessicary for this proj 
+          // zustand is shit 
+
+
+          // start on this first thing tommroow 
 }
