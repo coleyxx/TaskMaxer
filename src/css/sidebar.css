@@ -13,7 +13,7 @@
   display: inline-block;
   height: 100vh;
   width: 15rem;
-  background-color: grey;
+  background-color: rgb(196, 138, 58);
   /* translating occurs relative to original position in the document flow : that is the point of origin */
   transform: translateX(200%);
   transition-duration: 0.20s;
