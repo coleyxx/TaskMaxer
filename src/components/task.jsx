@@ -3,10 +3,21 @@ import { useState, useEffect } from "react";
 
 export default function task({ userObj })
 {
+          let i = 0;
+          // i just realized that the components are functions 
+          // so re rendering is just calling the function again
+          // hence why variables declared in the outermost scope always reset durring new render
+
+          function increment() {
+                    i++;
+          }
 
           // array of unique ids
           const [usersAssignedToTask, setUsersAssignedToTask] = useState([]);
           const [userInputAddUser, setUserInputAddUser] = useState("");
+
+          
+          
 
           function addUsersToTask(userobj)
           {

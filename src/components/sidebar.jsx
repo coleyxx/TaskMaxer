@@ -4,9 +4,8 @@ import User from "../components/user";
 
 export default function sidebar()
 {
-          
-          const [sideBarId, setSideBarId] = useState("master_sidebar_open");
 
+          const [sideBarId, setSideBarId] = useState("master_sidebar_open");
           // create state array holding all users
           const [allUsers, setAllUsers] = useState([
                     {
@@ -36,6 +35,7 @@ export default function sidebar()
                     },
           ]);
 
+
           function addNewUser(userObj)
           {
                     setAllUsers([...allUsers, userObj]);
@@ -45,7 +45,8 @@ export default function sidebar()
           // since it will only be called once the render is 100% done
           useEffect(() =>
           {
-                    return logAllUsers();
+                    logAllUsers();
+
           }, [allUsers])
 
 
@@ -67,12 +68,19 @@ export default function sidebar()
                     }
           }
 
+          function readAllDataFromComponentOnHover(ev)
+          {
+                    console.log("this is a dir log active");
+                    console.dir(ev);
+          }
+
+
           return (
                     <>
                               <div id={sideBarId}>
                                         <div id="master_sidebar_fake">
                                                   {
-                                                            allUsers.map((element) => { return <User key={element.reactId} name={element.name} /> })
+                                                            allUsers.map((element) => { return <User key={element.reactId} name={element.name} id={element.employeeId} onHoverCall={readAllDataFromComponentOnHover} /> })
                                                   }
                                                   <button className="arrow_toggle" onClick={() => sidebarOpenClose()}>{`>`}</button>
                                                   <button onClick={() => logAllUsers()}>log all users</button>
