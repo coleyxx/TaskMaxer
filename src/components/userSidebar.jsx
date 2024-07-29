@@ -10,11 +10,9 @@ export default function userSidebar(props)
           {
                     console.log(`The text content for this div is : ${e}`);
                     console.log(`The id for this div is : ${type}`);
-                    console.log("this is the message you want");
-                    console.log("this is the message");
           }
 
-
+          
           // this way we avoid having to pass entire data sites with a drag
           return (
                     <>

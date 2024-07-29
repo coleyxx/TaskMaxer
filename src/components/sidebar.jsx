@@ -5,7 +5,7 @@ import User from "../components/user";
 export default function sidebar()
 {
 
-          const [sideBarId, setSideBarId] = useState("master_sidebar_open");
+          const [sideBarId, setSideBarId] = useState("master_sidebar_closed");
           // create state array holding all users
           const [allUsers, setAllUsers] = useState([
                     {
@@ -34,7 +34,6 @@ export default function sidebar()
                               employeeId: 4
                     },
           ]);
-
 
           function addNewUser(userObj)
           {
@@ -73,7 +72,6 @@ export default function sidebar()
                     console.log("this is a dir log active");
                     console.dir(ev);
           }
-
 
           return (
                     <>

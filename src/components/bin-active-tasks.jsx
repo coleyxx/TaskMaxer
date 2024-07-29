@@ -1,7 +1,7 @@
 import Sidebar from "./sidebar";
 import "../css/binActiveTasks.css";
 import Task from "../components/task";
-import TaskImportanceKey from "./taskImportanceKey";
+import TaskImportanceKey from "./task-importance-key";
 
 export default function binActiveTasks()
 {

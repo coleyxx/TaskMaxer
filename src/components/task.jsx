@@ -15,8 +15,6 @@ export default function task({ userObj })
           // array of unique ids
           const [usersAssignedToTask, setUsersAssignedToTask] = useState([]);
           const [userInputAddUser, setUserInputAddUser] = useState("");
-
-          
           
 
           function addUsersToTask(userobj)
@@ -33,7 +31,7 @@ export default function task({ userObj })
           {
                     targetStateFunctionName("");
           }
-
+          
           function finalizeUser()
           {
                     addUsersToTask(userInputAddUser);
@@ -42,6 +40,7 @@ export default function task({ userObj })
 
           useEffect(() =>
           {
+                    // to my understanding all code will be called here so no there is not implied return as it is void
                     console.log(`all users assinged to task : ${usersAssignedToTask}`);
           }, [usersAssignedToTask])
 
